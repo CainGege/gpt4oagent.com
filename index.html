@@ -7,12 +7,53 @@
     <title>GPT-4o Agent</title>
     <link rel="canonical" href="https://gpt4oagent.com/">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        window.onload = function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            var langMap = {
+                "de": "/de/index.html",
+                "es": "/es/index.html",
+                "fr": "/fr/index.html",
+                "ru": "/ru/index.html",
+                "ar": "/ar/index.html",
+                "zh-TW": "/zh-tw/index.html",
+                "zh-CN": "/zh-cn/index.html",
+                "it": "/it/index.html",
+                "ja": "/ja/index.html",
+                "ko": "/ko/index.html"
+            };
+            var defaultLang = "/index.html"; // 默认语言是英文
+            var targetLang = langMap[userLang.split('-')[0]] || defaultLang;
+            if (targetLang !== defaultLang) {
+                window.location.href = targetLang;
+            }
+        };
+    </script>
 </head>
-
 <body>
     <header>
         <h1>GPT-4o Agent</h1>
         <h2>The First to Truly Understand Human Emotions</h2>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <a href="/index.html">English</a>
+                        <a href="/de/index.html">Deutsch</a>
+                        <a href="/es/index.html">Español</a>
+                        <a href="/fr/index.html">Français</a>
+                        <a href="/ru/index.html">Русский</a>
+                        <a href="/ar/index.html">العربية</a>
+                        <a href="/zh-tw/index.html">繁體中文</a>
+                        <a href="/zh-cn/index.html">简体中文</a>
+                        <a href="/it/index.html">Italiano</a>
+                        <a href="/ja/index.html">日本語</a>
+                        <a href="/ko/index.html">한국어</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <article>
@@ -34,20 +75,34 @@
 
             <h3>Advantages of GPT-4o Agent</h3>
             <p>While existing virtual assistants have some level of emotional understanding, GPT-4o Agent may offer advantages in the following areas:</p>
-            <ul>
-                <li><strong>Deep Learning and Large-Scale Pretraining:</strong> GPT-4o Agent is based on a large-scale pretrained model, capable of understanding and generating more complex and nuanced emotional expressions. This gives GPT-4o Agent an edge in handling and responding to human emotions.</li>
-                <li><strong>Multimodal Emotion Recognition:</strong> GPT-4o Agent can integrate multimodal inputs (like text, speech, and images) to understand users' emotional states more comprehensively.</li>
-                <li><strong>Personalized Emotional Responses:</strong> Through personalized settings and user history data, GPT-4o Agent can provide responses that better meet users' emotional needs, enhancing user satisfaction and trust.</li>
-                <li><strong>Broad Application Scenarios:</strong> GPT-4o Agent can be applied in various scenarios, such as psychological counseling, emotional support, educational tutoring, and more, offering customized emotional interaction services.</li>
-            </ul>
+            <ol>
+                <li><strong>Deep Learning and Large-Scale Pretraining:</strong>
+                    <p>GPT-4o Agent is based on a large-scale pretrained model, capable of understanding and generating more complex and nuanced emotional expressions. This gives GPT-4o Agent an edge in handling and responding to human emotions.</p>
+                </li>
+                <li><strong>Multimodal Emotion Recognition:</strong>
+                    <p>GPT-4o Agent can integrate multimodal inputs (like text, speech, and images) to understand users' emotional states more comprehensively.</p>
+                </li>
+                <li><strong>Personalized Emotional Responses:</strong>
+                    <p>Through personalized settings and user history data, GPT-4o Agent can provide responses that better meet users' emotional needs, enhancing user satisfaction and trust.</p>
+                </li>
+                <li><strong>Broad Application Scenarios:</strong>
+                    <p>GPT-4o Agent can be applied in various scenarios, such as psychological counseling, emotional support, educational tutoring, and more, offering customized emotional interaction services.</p>
+                </li>
+            </ol>
 
             <h3>Application Scenario Examples</h3>
             <p>Here are some specific application scenarios where GPT-4o Agent can understand and handle human emotions:</p>
-            <ul>
-                <li><strong>Psychological Counseling and Emotional Support:</strong> GPT-4o Agent can provide 24/7 online psychological counseling services. By understanding users' emotional states, GPT-4o Agent offers professional emotional support and advice.</li>
-                <li><strong>Customer Service and User Experience:</strong> In customer service, GPT-4o Agent's understanding of users' emotional states allows for more humanized and caring service, enhancing customer satisfaction.</li>
-                <li><strong>Education and Learning Tutoring:</strong> In educational settings, GPT-4o Agent's understanding of students' emotional states helps adjust teaching strategies and content, improving learning outcomes and student engagement.</li>
-            </ul>
+            <ol>
+                <li><strong>Psychological Counseling and Emotional Support:</strong>
+                    <p>GPT-4o Agent can provide 24/7 online psychological counseling services. By understanding users' emotional states, GPT-4o Agent offers professional emotional support and advice.</p>
+                </li>
+                <li><strong>Customer Service and User Experience:</strong>
+                    <p>In customer service, GPT-4o Agent's understanding of users' emotional states allows for more humanized and caring service, enhancing customer satisfaction.</p>
+                </li>
+                <li><strong>Education and Learning Tutoring:</strong>
+                    <p>In educational settings, GPT-4o Agent's understanding of students' emotional states helps adjust teaching strategies and content, improving learning outcomes and student engagement.</p>
+                </li>
+            </ol>
 
             <h3>How to Use GPT-4o Agent</h3>
             <p>Using GPT-4o Agent is straightforward and user-friendly. First, you need to access the platform where GPT-4o Agent is integrated, such as a website or an app. Once logged in, you can interact with GPT-4o Agent by typing or speaking your queries. GPT-4o Agent will analyze your inputs, understand the emotional context, and provide appropriate responses. You can personalize GPT-4o Agent's interaction style by adjusting settings to suit your preferences.</p>
@@ -57,8 +112,6 @@
 
             <h3>Conclusion</h3>
             <p>Although GPT-4o Agent may not be the first agent to understand human emotions, it has significant advantages in this field. Through deep learning, multimodal emotion recognition, and personalized emotional responses, GPT-4o Agent can provide more refined and effective emotional interaction services in various application scenarios, supplementing the existing ChatGPT-4 functionalities and meeting diverse user needs.</p>
-
-            <p>If you have specific ideas or questions, feel free to let me know. I will provide further assistance and advice based on your needs.</p>
         </article>
     </main>
     <footer>
@@ -75,7 +128,6 @@
         
           gtag('config', 'G-LXZLWXKGLW');
         </script>
-        </div>
-        
+    </div>
 </body>
 </html>
